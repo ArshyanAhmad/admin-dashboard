@@ -3,6 +3,9 @@ import AdminSidebar from "../components/AdminSidebar";
 import { BsSearch } from "react-icons/bs";
 import { HiTrendingUp, HiTrendingDown } from "react-icons/hi";
 
+import data from "../assets/data.json";
+
+
 import userImg from "../assets/userImg.png";
 
 const Dashboard = () => {
@@ -59,7 +62,11 @@ const Dashboard = () => {
                         <h2>Inventory</h2>
 
                         <div>
-                            <CategoryItem heading="Laptops" value={70} color="hsl(89, 100%, 50%)" />
+                            {
+                                data.categories.map((i) =>
+                                    <CategoryItem key={i.heading} heading={i.heading} value={i.value} color={`hsl(${i.value * 4}, ${i.value}%, 50%)`} />
+                                )
+                            }
                         </div>
                     </div>
                 </section>
@@ -137,5 +144,6 @@ const CategoryItem = ({ color, value, heading }: CategoryItemProps) =>
 
         <span>{value}%</span>
     </div>;
+
 
 export default Dashboard;
