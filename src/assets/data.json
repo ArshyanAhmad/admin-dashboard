@@ -22,36 +22,36 @@
       {
          "id": "1",
          "amount": 4000,
-         "qty": 4,
+         "quantity": 4,
          "discount": 300,
          "status": "Processing"
       },
       {
          "id": "2",
          "amount": 5100,
-         "qty": 2,
+         "quantity": 2,
          "discount": 200,
-         "status": ""
-      },
-      {
-         "id": "1",
-         "amount": 4000,
-         "qty": 4,
-         "discount": 300,
          "status": "Processing"
       },
       {
-         "id": "1",
-         "amount": 4000,
-         "qty": 4,
-         "discount": 300,
+         "id": "3",
+         "amount": 6000,
+         "quantity": 6,
+         "discount": 400,
          "status": "Processing"
       },
       {
-         "id": "1",
-         "amount": 4000,
-         "qty": 4,
-         "discount": 300,
+         "id": "4",
+         "amount": 7050,
+         "quantity": 9,
+         "discount": 200,
+         "status": "Processing"
+      },
+      {
+         "id": "5",
+         "amount": 2070,
+         "quantity": 3,
+         "discount": 700,
          "status": "Processing"
       }
    ]
